@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+    TrueBeautyShop
+</title>
+
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="menuPionowe.css">
+<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="produkty.css">
+<script>
+    function addToCart(productName, price) {
+        alert('Dodano do koszyka!');
+    }
+    </script>
+
+</head>
+<body>
+<header>
+    <h1>TrueBeautyShop</h1> 
+</header>
+<nav>
+    <h2 >Menu</h2>
+    <ul>
+        <li> <a href="index.html"> Strona główna </a></li>
+        <li><a href="formularz.html">Logowanie i rejestracja </a></li>
+        <li><a href="map.html">Interaktywne kategorie</a></li>
+        <li><a href="tabela.html">Ranking Kosmetyków</a></li>
+        <li><a href="przelicznik.html">Przelicznik kosmetyków</a></li>
+        <li><a href="prezentacja.html">Wskazówki pielęgnacyjne</a></li>
+        <li><a href="wlosy.html">Włosy</a></li>
+        <li><a href="cialo.html">Ciało</a></li>
+        <li><a href="makijaz.html">Makijaż</a></li>
+        <li><a href="paznokcie.html">Paznokcie</a></li>
+        <li><a href="twarz.html">Twarz</a></li>
+
+    </ul>
+</nav>
+<article>
+    <h4>Produkty do paznokci</h4>
+    <div class="product-list">
+        <div class="product">
+            <img src="baza.jpg" alt="baza">
+            <h3>CLARESA Baza hybrydowa</h3>
+            <p>19 zł</p>
+            <button onclick="addToCart('CLARESA baza hybrydowa', 19)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="lakier.jpg" alt="lakier">
+            <h3>CLARESA Czerwony lakier </h3>
+            <p>15 zł</p>
+            <button onclick="addToCart('CLARESA Czerwony lakier', 15)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="bialylakier.jpg" alt="bialylakier">
+            <h3>CLARESA Biały lakier</h3>
+            <p>16 zł</p>
+            <button onclick="addToCart('CLARESA Biały lakier', 16)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="aceton.jpg" alt="aceton">
+            <h3>LA LISS Aceton i cleaner </h3>
+            <p>40 zł</p>
+            <button onclick="addToCart('LA LISS Aceton i cleaner', 40)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="top.jpg" alt="top">
+            <h3>CLARESA Top coat hybrydowy</h3>
+            <p>21 zł</p>
+            <button onclick="addToCart('CLARESA Top coat hybrydowy', 21)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="pilnik.jpg" alt="pilnik">
+            <h3>STYLISTIC pilnik do paznokci</h3>
+            <p>3 zł</p>
+            <button onclick="addToCart('STYLISTIC pilnik do paznokci', 3)">Dodaj do koszyka</button>
+        </div>
+    </div>
+
+</article>  
+
+
+
+<aside style="text-align:center;">
+    <h2> Informacje </h2>
+    <iframe src="kontrolkijs.html"></iframe>
+    <canvas id="logoCanvas" width="200" height="200" style=" align-items: center;"></canvas>
+    <script src="canvas.js"></script>
+</aside>
+    <footer> 
+        <hr>
+        Autorka: Zuzanna Krasucka <br>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br>
+        61-138 Poznań <br>
+        tel: 987 654 321 <br>
+        <address>
+        <a href="mailto:zuzanna.krasucka@student.put.poznan.pl">zuzanna.krasucka@student.put.poznan.pl</a>
+        </address>
+
+        <hr>
+        Projekt strony internetowej wykonany w ramach
+zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.<hr>
+    </footer>
+</body>
+</html>

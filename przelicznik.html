@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+    TrueBeautyShop
+</title>
+
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="menuPionowe.css">
+<link rel="stylesheet" href="form.css">
+
+
+</head>
+<body>
+<header>
+    <h1>TrueBeautyShop</h1> 
+</header>
+<nav>
+    <h2 >Menu</h2>
+    <ul>
+        <li> <a href="index.html"> Strona główna </a></li>
+        <li><a href="formularz.html">Logowanie i rejestracja </a></li>
+        <li><a href="map.html">Interaktywne kategorie</a></li>
+        <li><a href="tabela.html">Ranking Kosmetyków</a></li>
+        <li><a href="przelicznik.html">Przelicznik kosmetyków</a></li>
+        <li><a href="prezentacja.html">Wskazówki pielęgnacyjne</a></li>
+        <li><a href="wlosy.html">Włosy</a></li>
+        <li><a href="cialo.html">Ciało</a></li>
+        <li><a href="makijaz.html">Makijaż</a></li>
+        <li><a href="paznokcie.html">Paznokcie</a></li>
+        <li><a href="twarz.html">Twarz</a></li>
+
+
+        <script src="przelicznik.js"></script>
+
+    </ul>
+</nav>
+<article>
+    <h4>Przelicznik Kosmetyków</h4>
+    <form id="przelicznikForm">
+        <fieldset>
+        <legend>Wypełnij pola:</legend>
+        <label for="cena">Cena kosmetyku (PLN):</label>
+        <input type="number" id="cena" name="cena" step="1" min="0"> <br><br>
+
+        <label for="ilosc">Pojemność kosmetyku (ml lub g):</label>
+        <input type="number" id="ilosc" name="ilosc" step="1" min="0" required><br><br>
+
+        <label for="uzycie">Zużycie kosmetyku na jeden dzień (ml lub g /dzień):</label>
+        <input type="number" id="uzycie" name="uzycie" step="1" min="0" required><br><br>
+    </fieldset> 
+    <br>
+    <fieldset> <legend>Wybierz okres czasu:</legend>
+           
+            <label for="1dzien">1 dzień</label>
+            <input type="radio" id="1dzien" name="okres" value="1"><br>
+            <label for="3dni">3 dni</label>
+            <input type="radio" id="3dni" name="okres" value="3"><br>
+            <label for="miesiac">Miesiąc</label>
+            <input type="radio" id="miesiac" name="okres" value="30"><br>
+            <label for="3miesiace">3 miesiące</label>
+            <input type="radio" id="3miesiace" name="okres" value="90"><br>
+            <label for="polroku">Pół roku</label>
+            <input type="radio" id="polroku" name="okres" value="182"><br>
+            <label for="rok">Rok</label>
+            <input type="radio" id="rok" name="okres" value="365"><br>
+            <label for="3lata">3 lata</label>
+            <input type="radio" id="3lata" name="okres" value="1095"><br>
+            <label for="5lat">5 lat</label>
+            <input type="radio" id="5lat" name="okres" value="1825"><br>
+            <label for="10lat">10 lat</label>
+            <input type="radio" id="10lat" name="okres" value="3650">
+        </fieldset> <br>
+        <div style="text-align: center;">
+            <input type="button" value="Oblicz" onclick="obliczKoszt()">
+        </div>
+    </form>
+    <div id="wyniki">
+        <h3 style="font-size: 25px;">Wyniki:</h3>
+        <h3 id="wynikCzas">Czas na jaki wystarczy kosmetyk przy obecnym zużyciu:</h3>
+        <h3 id="wynikKoszt">Koszt użytkowania za wprowadzony okres czasu: </h3>
+    </div>
+</article>
+
+
+<aside style="text-align:center;">
+    <h2> Informacje </h2>
+    <iframe src="kontrolkijs.html"></iframe>
+    <canvas id="logoCanvas" width="200" height="200" style=" align-items: center;"></canvas>
+    <script src="canvas.js"></script>
+</aside>
+    <footer> 
+        <hr>
+        Autorka: Zuzanna Krasucka <br>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br>
+        61-138 Poznań <br>
+        tel: 987 654 321 <br>
+        <address>
+        <a href="mailto:zuzanna.krasucka@student.put.poznan.pl">zuzanna.krasucka@student.put.poznan.pl</a>
+        </address>
+
+        <hr>
+        Projekt strony internetowej wykonany w ramach
+zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.<hr>
+    </footer>
+</body>
+</html>

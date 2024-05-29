@@ -1,0 +1,25 @@
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+thead th {
+    background-color: hsl(318, 67%, 45%);
+    border: 2px solid #330722; 
+    padding: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    color: #ffffff; 
+}
+
+tbody td {
+    background-color: rgb(236, 172, 220);
+    border: 2px solid #330721; 
+    padding: 10px;
+    text-align: center;
+    color: black; 
+}
+

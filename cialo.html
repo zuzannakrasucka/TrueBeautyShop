@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+    TrueBeautyShop
+</title>
+
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="menuPionowe.css">
+<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="produkty.css">
+<script>
+    function addToCart(productName, price) {
+        alert('Dodano do koszyka!');
+    }
+    </script>
+
+</head>
+<body>
+<header>
+    <h1>TrueBeautyShop</h1> 
+</header>
+<nav>
+    <h2 >Menu</h2>
+    <ul>
+        <li> <a href="index.html"> Strona główna </a></li>
+        <li><a href="formularz.html">Logowanie i rejestracja </a></li>
+        <li><a href="map.html">Interaktywne kategorie</a></li>
+        <li><a href="tabela.html">Ranking Kosmetyków</a></li>
+        <li><a href="przelicznik.html">Przelicznik kosmetyków</a></li>
+        <li><a href="prezentacja.html">Wskazówki pielęgnacyjne</a></li>
+        <li><a href="wlosy.html">Włosy</a></li>
+        <li><a href="cialo.html">Ciało</a></li>
+        <li><a href="makijaz.html">Makijaż</a></li>
+        <li><a href="paznokcie.html">Paznokcie</a></li>
+        <li><a href="twarz.html">Twarz</a></li>
+
+    </ul>
+
+    
+</nav>
+<article>
+    <h4>Produkty do ciała</h4>
+    <div class="product-list">
+        <div class="product">
+            <img src="niveazel.jpg" alt="zel">
+            <h3>NIVEA Żel pod prysznic</h3>
+            <p>17 zł</p>
+            <button onclick="addToCart('NIVEA Żel pod prysznic', 17)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="pianka.jpg" alt="pianka">
+            <h3>RITUALS Pianka pod prysznic </h3>
+            <p>79 zł</p>
+            <button onclick="addToCart('RITUALS Pianka pod prysznic', 79)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="biooil.jpg" alt="biooil">
+            <h3>BIOOIL olejek do pięlegnacji skóry </h3>
+            <p>34zł</p>
+            <button onclick="addToCart('BIOOIL olejek do pięlegnacji skóry', 34)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="peeling.jpg" alt="peeling">
+            <h3>ZIAJA Peeling do ciała</h3>
+            <p>22 zł</p>
+            <button onclick="addToCart('ZIAJA Peeling do ciała', 22)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="maslo.jpg" alt="maslo">
+            <h3>BIELENDA Masło do ciała</h3>
+            <p>26 zł</p>
+            <button onclick="addToCart('BIELENDA Masło do ciała', 26)">Dodaj do koszyka</button>
+        </div>
+        <div class="product">
+            <img src="balsam.jpg" alt="balsam">
+            <h3>CERAVE balsam do ciała</h3>
+            <p>39 zł</p>
+            <button onclick="addToCart('CERAVE balsam do ciała', 39)">Dodaj do koszyka</button>
+        </div>
+    </div>
+
+</article>
+
+
+
+ <aside style="text-align:center;">
+    <h2> Informacje </h2>
+    <iframe src="kontrolkijs.html"></iframe>
+    <canvas id="logoCanvas" width="200" height="200" style=" align-items: center;"></canvas>
+    <script src="canvas.js"></script>
+</aside>
+    <footer> 
+        <hr>
+        Autorka: Zuzanna Krasucka <br>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br>
+        61-138 Poznań <br>
+        tel: 987 654 321 <br>
+        <address>
+        <a href="mailto:zuzanna.krasucka@student.put.poznan.pl">zuzanna.krasucka@student.put.poznan.pl</a>
+        </address>
+
+        <hr>
+        Projekt strony internetowej wykonany w ramach
+zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.<hr>
+    </footer>
+</body>
+</html>

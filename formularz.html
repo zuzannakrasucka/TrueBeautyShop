@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+    TrueBeautyShop
+</title>
+
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="menuPionowe.css">
+<link rel="stylesheet" href="form.css">
+
+
+</head>
+<body>
+<header>
+    <h1>TrueBeautyShop</h1> 
+</header>
+<nav>
+    <h2 >Menu</h2>
+    <ul>
+        <li> <a href="index.html"> Strona główna </a></li>
+        <li><a href="formularz.html">Logowanie i rejestracja </a></li>
+        <li><a href="map.html">Interaktywne kategorie</a></li>
+        <li><a href="tabela.html">Ranking Kosmetyków</a></li>
+        <li><a href="przelicznik.html">Przelicznik kosmetyków</a></li>
+        <li><a href="prezentacja.html">Wskazówki pielęgnacyjne</a></li>
+        <li><a href="wlosy.html">Włosy</a></li>
+        <li><a href="cialo.html">Ciało</a></li>
+        <li><a href="makijaz.html">Makijaż</a></li>
+        <li><a href="paznokcie.html">Paznokcie</a></li>
+        <li><a href="twarz.html">Twarz</a></li>
+
+    </ul>
+</nav>
+<article>
+    <h4>Dane klienta i dostawy</h4>
+    <form action="mailto:zuz.oficjalny@gmail.com" method="post" enctype="multipart/form-data">
+        <h5>Wypełnij poniższy formularz, aby móc składać zamówienia. <br>
+            <br>
+            Pola oznaczone <em>*</em> są obowiązkowe.</h5>
+        <fieldset>
+            <legend>Dane Klienta</legend>
+            <label for="imie">Imię<em>*</em></label>
+            <input type="text" name="imie" id="imie" required autofocus><br>
+            <label for="nazwisko">Nazwisko<em>*</em></label>
+            <input type="text" name="nazwisko" id="nazwisko" required><br>
+            <label for="plec">Płeć</label>
+            <select name="plec" id="plec">
+                <option value="kobieta">Kobieta</option>
+                <option value="mezczyzna">Mężczyzna</option>
+                <option value="inna">Inna</option>
+                <option value="nie_podaje">Nie chce podawać</option>
+            </select><br>
+            <label for="data_urodzenia">Data urodzenia</label>
+            <input type="date" name="data_urodzenia" id="data_urodzenia"><br>
+            <label for="telefon">Telefon<em>*</em></label>
+            <input type="tel" name="telefon" id="telefon" required placeholder="(+48) xxx-xxx-xxx"><br>
+            <label for="email">Email<em>*</em></label>
+            <input type="email" name="email" id="email" required placeholder="imie.nazwisko@example.com"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Szczegóły dostawy</legend>
+            <label for="kraj">Kraj<em>*</em></label>
+            <input type="text" name="kraj" id="kraj" required><br>
+            <label for="adres">Adres zamieszkania<em>*</em></label>
+            <input type="text" name="adres" id="adres" required><br>
+            <label for="miasto">Miasto<em>*</em></label>
+            <input type="text" name="miasto" id="miasto" required><br>
+            <label for="kod_pocztowy">Kod pocztowy<em>*</em></label>
+            <input type="text" name="kod_pocztowy" id="kod_pocztowy" required pattern="[0-9]{2}-[0-9]{3}" placeholder="00-000"><br>
+          
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Preferencje</legend>
+           
+            <input type="checkbox" name="zainteresowania" value="makijaz"> Makijaż<br>
+            <input type="checkbox" name="zainteresowania" value="pielegnacja"> Pielęgnacja<br>
+            <input type="checkbox" name="zainteresowania" value="wlosy"> Włosy<br>
+            <input type="checkbox" name="zainteresowania" value="paznokcie"> Paznokcie<br>
+            <input type="checkbox" name="zainteresowania" value="ciało"> Ciało<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Newsletter</legend>
+            <input type="radio" name="newsletter" value="tak" checked> Tak, chcę otrzymywać oferty reklamowe<br>
+            <input type="radio" name="newsletter" value="19-30"> Nie, nie chcę otrzymywać ofert reklamowych<br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Opinie o sklepie</legend>
+            <textarea name="opinia" id="opinia" cols="30" rows="5" placeholder="Wpisz lub załącz swoją opinię o sklepie internetowym TrueBeautyShop!"></textarea><br>
+            <input type="file" name="zalacznik" id="zalacznik"><br>
+        </fieldset> <br>
+        <div style="text-align: center;">
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Kasuj formularz">
+        </div>
+    </form>
+</article>
+
+
+<aside style="text-align:center;">
+    <h2> Informacje </h2>
+    <iframe src="kontrolkijs.html"></iframe>
+    <canvas id="logoCanvas" width="200" height="200" style=" align-items: center;"></canvas>
+    <script src="canvas.js"></script>
+</aside>
+    <footer> 
+        <hr>
+        Autorka: Zuzanna Krasucka <br>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br>
+        61-138 Poznań <br>
+        tel: 987 654 321 <br>
+        <address>
+        <a href="mailto:zuzanna.krasucka@student.put.poznan.pl">zuzanna.krasucka@student.put.poznan.pl</a>
+        </address>
+
+        <hr>
+        Projekt strony internetowej wykonany w ramach
+zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.<hr>
+    </footer>
+</body>
+</html>

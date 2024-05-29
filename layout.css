@@ -1,0 +1,158 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: rgb(230, 174, 217)
+  
+}
+
+body > header {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(226, 146, 194, 0.799);
+    color: rgb(161, 18, 109);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-style: double;
+    border-color: mediumvioletred;
+    text-shadow: 2px 2px 3px white;
+}
+
+nav, article, aside {
+    display: block;
+    padding: 10px;
+    
+   
+}
+
+nav, aside {
+    width: 20%;
+    height: 100%;
+    background-color: rgb(230, 174, 217);
+    float: left;
+   
+    
+}
+
+article {
+    width: 60%;
+    background: radial-gradient(circle at 500px 500px, mediumvioletred, rgb(230, 174, 217), white);
+    padding: 15px;
+    overflow: auto;
+    float: left;
+    min-height: 100vh;
+    border-left: double mediumvioletred;
+    border-right: double mediumvioletred;
+    
+}
+
+iframe {
+
+        border:0;
+        height:400px;
+}
+
+h1{
+   
+    text-align: center; 
+    color: rgb(161, 18, 109);
+ 
+    
+
+}
+
+h2 {
+     background-color:mediumvioletred;
+     color:white; 
+     text-align: center;
+     border: 0.5px dotted white;
+}
+
+h4{
+   font-size: 30px;
+    text-align: center; 
+    color: rgb(161, 18, 109);
+    text-shadow: 1px 1px 1px white;
+}
+h5{
+ 
+     color: rgb(43, 6, 29);
+     font-size: 18px;
+     text-align: justify;
+     
+     
+
+}
+
+body > footer {
+    height: 225px;
+    background-color: rgba(226, 146, 194, 0.799);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-style: double;
+    border-color: mediumvioletred;
+    text-align: center;
+    clear: both;
+}
+
+body > footer hr {
+    border: 1px solid mediumvioletred;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.center-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    nav, aside {
+        width: 100%;
+        float: none;
+        min-height: auto;
+    }
+
+    article {
+        width: 100%;
+        float: none;
+    }
+
+    body > header, body > footer {
+        text-align: center;
+    }
+
+    #logoCanvas {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    #img_browser {
+        width: 100%;
+    }
+
+    #image {
+        max-width: 100%;
+    }
+}

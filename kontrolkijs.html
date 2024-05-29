@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>
+    TrueBeautyShop
+</title>
+
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="menuPionowe.css">
+<link rel="stylesheet" href="form.css">
+<script src="zegar.js"></script>
+
+</head>
+<body onload="zegar();pokazDate(); licznikOdwiedzin(); czasNaStronie();" style="display: flex; align-items: center; flex-direction: column;">
+
+        
+        <h3>Zegar</h3>    
+         <input type="text" id="zegarTXT">
+    
+        <h3>Data</h3>
+         <input type="text" id="dataTXT" readonly>
+    
+        <h3>Licznik odwiedzin</h3>
+       <input type="text" id="visitCount" readonly>
+    
+        <h3>Czas spędzony na stronie</h3>
+       <input type="text" id="timeSpent" readonly><br>
+       <h3>Logo strony Canvas</h3>
+
+</body>
+</html>

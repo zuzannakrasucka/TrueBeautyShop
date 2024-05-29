@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+    .slide.active-slide {
+        display: block;
+    }
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .presentation-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    img {
+        margin-top: 15px;
+    }
+
+    p {
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .presentation-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    img {
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
+}
+</style>
+
+<title>
+    TrueBeautyShop
+</title>
+
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="menuPionowe.css">
+<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="prezentacja.css">
+
+</head>
+<body>
+<header>
+    <h1>TrueBeautyShop</h1> 
+</header>
+<nav>
+    <h2 >Menu</h2>
+    <ul>
+        <li> <a href="index.html"> Strona główna </a></li>
+        <li><a href="formularz.html">Logowanie i rejestracja </a></li>
+        <li><a href="map.html">Interaktywne kategorie</a></li>
+        <li><a href="tabela.html">Ranking Kosmetyków</a></li>
+        <li><a href="przelicznik.html">Przelicznik kosmetyków</a></li>
+        <li><a href="prezentacja.html">Wskazówki pielęgnacyjne</a></li>
+        <li><a href="wlosy.html">Włosy</a></li>
+        <li><a href="cialo.html">Ciało</a></li>
+        <li><a href="makijaz.html">Makijaż</a></li>
+        <li><a href="paznokcie.html">Paznokcie</a></li>
+        <li><a href="twarz.html">Twarz</a></li>
+
+    </ul>
+</nav>
+<article>
+    <h4>Wskazówki pielęgnacyjne</h4>
+    <div class="slide active-slide">
+        <h1>Pamiętaj o SPF</h1>
+        <img src="spf.jpg" alt="spf" />
+        <h5>Staraj się używać na codzień ochrony przeciwsłonecznej, zwłaszcza latem, ze względu na negatywny wpływ promieni słonecznych na skórę. 
+            Najlepiej sprawdzą się kremy SPF 50+. Koniecznie pamiętaj o reaplikacji kremu w ciągu dnia!
+        </h5>
+    </div>
+    <div class="slide">
+        <h1>Stosuj serum na końcówki włosów</h1>
+        <img src="serum.jpeg" alt="serum" />
+        <h5>Stosowanie serum na końcówki włosów to doskonała metoda pozwalająca zminimalizować występowanie rozdwojonych końców włosów. 
+        Z pewnością zaoszczędzisz na usługach fryzjerskich i będzięsz cieszyć się pięknymi włosami!</h5>
+    </div>
+    <div class="slide">
+        <h1>Nie zapomnij o codziennym nawilżaniu twarzy</h1>
+        <img src="nawilzajacy.jpg" alt="nawilzajacy" />
+        <h5>Skóra na twarzy szczególnie potrzebuje nawilżenia. Pożegnaj uczucie suchości i ściągnięcia stosując przynajniej raz dziennie 
+            nawilżąjący krem do twarzy! </h5>
+    </div>
+    <div class="slide">
+        <h1>Gładka skóra po peelingu</h1>
+        <img src="peeling.jpg" alt="peeling" />
+        <h5>Peeling do ciała nie tylko zapewni ci aksamitnie gładką skórę, usuwając martwą warstwę naskórka, lecz również sprawi, 
+            że balsamy do ciała będą lepiej nawilżać twoją skórę. Postaraj się go stosować przynajmniej raz na tydzień dla widocznych efektów!</h5>
+    </div>
+    <div class="slide">
+        <h1>Olejek do zadań specjalnych</h1>
+        <img src="biooil.jpg" alt="biooil" />
+        <h5>Stosując codziennie naturalny olejek do pięlęgancji wrażliwej skóry, zapomnisz o bliznach, rozstępach i przebarwieniach. 
+            Twoja skóra będzie bardziej elastyczna i nawilżona. Odczuj różnicę już dziś! </h5>
+    </div>
+    <div class="slide">
+        <h1>Pamiętaj o demakijażu</h1>
+        <img src="korektor.jpg" alt="korektor" />
+        <h5>Niezależnie od tego jak pięknie i starannie wykonany byłby Twój makijaż, nie zapominaj o jego dokładnym zmywaniu przed snem. To ważny etap pielęgnacji.
+            Podczas snu w skórze zachodzą procesy regeneracyjnie, więc zadbaj o szczególnie oczyszczenie twarzy przed snem!
+        </h5>
+    </div>
+    <div class="nav-buttons">
+        <button onclick="previousSlide()">Poprzedni</button>
+        <button onclick="nextSlide()">Następny</button>
+    </div>
+</article>
+<script src="prezentacja.js"></script>
+
+
+    <aside style="text-align:center;">
+        <h2> Informacje </h2>
+        <iframe src="kontrolkijs.html"></iframe>
+        <canvas id="logoCanvas" width="200" height="200" style=" align-items: center;"></canvas>
+        <script src="canvas.js"></script>
+    </aside>
+    <footer> 
+        <hr>
+        Autorka: Zuzanna Krasucka <br>
+        Politechnika Poznańska <br>
+        ul. Piotrowo 5<br>
+        61-138 Poznań <br>
+        tel: 987 654 321 <br>
+        <address>
+        <a href="mailto:zuzanna.krasucka@student.put.poznan.pl">zuzanna.krasucka@student.put.poznan.pl</a>
+        </address>
+
+        <hr>
+        Projekt strony internetowej wykonany w ramach
+zaliczenia przedmiotu MO: TIiSKwE na kierunku Energetyka.<hr>
+    </footer>
+</body>
+</html>
